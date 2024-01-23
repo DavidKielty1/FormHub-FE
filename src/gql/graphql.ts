@@ -23,6 +23,16 @@ export type Scalars = {
   JSON: { input: any; output: any; }
 };
 
+export type Mutation = {
+  __typename?: 'Mutation';
+  queueSubmissionGeneration: Scalars['Boolean']['output'];
+};
+
+
+export type MutationQueueSubmissionGenerationArgs = {
+  count?: InputMaybe<Scalars['Int']['input']>;
+};
+
 export type Query = {
   __typename?: 'Query';
   submissions: Array<Submission>;
@@ -53,6 +63,16 @@ export type Scalars = {
   DateTime: { input: any; output: any; }
   /** The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf). */
   JSON: { input: any; output: any; }
+};
+
+export type Mutation = {
+  __typename?: 'Mutation';
+  queueSubmissionGeneration: Scalars['Boolean']['output'];
+};
+
+
+export type MutationQueueSubmissionGenerationArgs = {
+  count?: InputMaybe<Scalars['Int']['input']>;
 };
 
 export type Query = {
